@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Assessment | Capacity Connect</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">CC</span>
+      <span>CAPACITY <b>CONNECT</b><small>IMD TRAINING PORTAL</small></span>
+    </a>
+    <nav>
+      <a class="nav-link" href="index.html">Job Roles</a>
+      <a class="nav-link active" href="courses.html">Training</a>
+      <button class="theme-toggle" id="themeToggle" type="button">☼ Light mode</button>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <a class="back-link" href="courses.html">← Back to courses</a>
+
+    <section class="page-intro compact-intro">
+      <span class="eyebrow">KNOWLEDGE CHECK / 03 QUESTIONS</span>
+      <h1>Course <span>assessment.</span></h1>
+      <p id="quizSubtitle">Choose the best answer for each question.</p>
+    </section>
+
+    <section class="quiz-panel">
+      <div class="quiz-topline">
+        <div>
+          <span class="eyebrow">ASSESSMENT MODULE</span>
+          <h2 id="quizTitle">Weather Knowledge Check</h2>
+        </div>
+        <span class="selection-count" id="answeredCount">0 / 3 ANSWERED</span>
+      </div>
+
+      <form id="quizForm">
+        <div id="questionList"></div>
+        <button class="btn btn-primary submit-btn" type="submit">Submit Quiz →</button>
+      </form>
+
+      <div id="quizResult" class="quiz-result" aria-live="polite" hidden></div>
+    </section>
+
+    <footer class="footer">
+      <span>CAPACITY CONNECT</span>
+      <span>ASSESSMENT & KNOWLEDGE CHECK</span>
+    </footer>
+  </main>
+</body>
+</html>

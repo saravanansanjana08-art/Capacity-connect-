@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Role Details | Capacity Connect</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">CC</span>
+      <span>CAPACITY <b>CONNECT</b><small>IMD TRAINING PORTAL</small></span>
+    </a>
+    <nav>
+      <a class="nav-link" href="index.html">Job Roles</a>
+      <a class="nav-link" href="courses.html">Training</a>
+      <button class="theme-toggle" id="themeToggle" type="button">☼ Light mode</button>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <a class="back-link" href="index.html">← Back to job roles</a>
+
+    <section class="details-hero">
+      <div class="role-emblem" id="roleIcon">◎</div>
+      <div class="details-title">
+        <span class="eyebrow">ROLE PROFILE / IMD</span>
+        <h1 id="roleTitle">Role Details</h1>
+        <p id="roleSummary">Explore your selected specialist role.</p>
+        <div class="tag-row" id="roleTags"></div>
+      </div>
+      <span class="status-label">ROLE PROFILE</span>
+    </section>
+
+    <div class="details-layout">
+      <section class="panel overview-panel">
+        <span class="eyebrow">01 / OVERVIEW</span>
+        <h2>About this role</h2>
+        <p id="roleDescription"></p>
+
+        <div class="panel-divider"></div>
+
+        <h3>Key responsibilities</h3>
+        <ul class="check-list" id="responsibilities"></ul>
+      </section>
+
+      <aside class="panel skills-panel">
+        <span class="eyebrow">02 / CAPABILITIES</span>
+        <h2>Skills to develop</h2>
+        <div class="skill-list" id="skillsList"></div>
+        <p class="muted">Build these capabilities through guided learning and practical exercises.</p>
+      </aside>
+
+      <section class="panel learning-panel">
+        <span class="eyebrow">03 / YOUR DEVELOPMENT</span>
+        <h2>Suggested learning pathway</h2>
+        <div class="learning-path" id="learningPath"></div>
+        <a class="btn btn-primary" href="courses.html">Explore training courses →</a>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <span>CAPACITY CONNECT</span>
+      <a href="courses.html">CONTINUE TO TRAINING →</a>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacity Connect | IMD Training Portal</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">CC</span>
+      <span>CAPACITY <b>CONNECT</b><small>IMD TRAINING PORTAL</small></span>
+    </a>
+    <nav>
+      <a class="nav-link active" href="index.html">Job Roles</a>
+      <a class="nav-link" href="courses.html">Training</a>
+      <button class="theme-toggle" id="themeToggle" type="button">☼ Light mode</button>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">INDIAN METEOROLOGICAL DEPARTMENT</span>
+        <h1>Build your <span>expertise.</span><br>Choose your role.</h1>
+        <p>Explore specialist roles, discover essential skills, and follow a structured learning pathway.</p>
+        <div class="hero-actions">
+          <a class="btn btn-secondary" href="courses.html">Explore training ↗</a>
+        </div>
+      </div>
+      <div class="hero-stamp">
+        <span class="stamp-number">12</span>
+        <span>SPECIALIST<br>ROLE PATHWAYS</span>
+        <span class="stamp-line"></span>
+        <small>LEARN · DEVELOP · ADVANCE</small>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <div>
+        <span class="eyebrow">CAREER PATHWAYS</span>
+        <h2>Choose your role</h2>
+        <p>Select one role to explore its responsibilities and learning path.</p>
+      </div>
+      <div class="selection-count" id="selectionCount">0 / 1 SELECTED</div>
+    </section>
+
+    <section class="role-grid" id="roleGrid"></section>
+
+    <section class="continue-bar">
+      <div>
+        <strong id="selectionTitle">No role selected</strong>
+        <p id="selectionHint">Select a role card to continue.</p>
+      </div>
+      <button class="btn btn-primary" id="continueBtn" disabled>
+        Continue to role details <span>→</span>
+      </button>
+    </section>
+
+    <footer class="footer">
+      <span>CAPACITY CONNECT</span>
+      <span>IMD TRAINING PORTAL · LEARNING & DEVELOPMENT</span>
+    </footer>
+  </main>
+</body>
+</html>
